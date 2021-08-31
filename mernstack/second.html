@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <p>
+            Number 1 = <input type="text" id="num1">
+            Number 2 = <input type="text" id="num2">
+        </p>
+        <form>
+            <input type="button" onclick="add()" value="Addition">
+            <input type="button" onclick="sub()" value="Subtraction">
+            <input type="button" onclick="multi()" value="Multiplication">
+            <input type="button" onclick="division()" value="Division">
+        </form>
+        <script>
+            function add() {
+                var num = parseInt(document.getElementById("num1").value) + parseInt(document.getElementById("num2").value);
+                alert("Addition: " + num)
+            }
+            function sub() {
+                var num = parseInt(document.getElementById("num1").value) - parseInt(document.getElementById("num2").value);
+                alert("Subtraction: " + num)
+            }
+            function multi() {
+                var num = parseInt(document.getElementById("num1").value) * parseInt(document.getElementById("num2").value);
+                alert("Multiplication: " + num)
+            }
+            function division() {
+                var num = parseInt(document.getElementById("num1").value) / parseInt(document.getElementById("num2").value);
+                alert("Division: " + num)
+            }
+        </script>
+    </body>
+
+</html>
